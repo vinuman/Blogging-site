@@ -277,7 +277,7 @@ nav > button:hover{
   
     .post> .time{
       width:90%;
-      font-size:2rem;
+      font-size:1rem;
       display: block;
       opacity: 0.6;
       /* display:inline-flexbox; */
