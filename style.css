@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+nav{
+  position: fixed;
+  top:0;
+  width:100%;
+  height:8.3rem;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 1000;
+ 
+}
+
+nav > h1{
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+nav > h1:hover{
+    transform: scale(1.1);
+}
+
+nav > button{
+  width:25.3rem;
+  height: 5.9rem;
+  font-size: 2.4rem;
+  background-color: #111111;
+  color:#E3E3E3;
+  border:1px solid #fff;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+nav > button:hover{
+    background-color:#E3E3E3;
+    color:#111111;
+}
+
+.empty{
+    height: 8.5rem;
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #E3E3E3;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h2{
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #333333;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  #post-heading{
+    width:90%;
+    height: 6rem;
+    background-color: #E3E3E3;
+    border: 1px solid #000;
+  }
+
+  input::placeholder{
+    font-size: 2.4rem;
+    padding-left: 2rem;
+    color: #333333;
+    opacity: 0.6;
+  }
+
+  textarea::placeholder{
+    color: #333333 !important;
+    font-size: 2.4rem;
+    padding-left:2rem;
+    font-family: 'Inter', sans-serif !important;
+    padding-top: 1rem !important;
+    opacity: 0.6;
+  }
+
+  #post-content{
+    width:90%;
+    height: 25rem;
+    background-color: #E3E3E3;
+  }
+
+  input[type="text"]{
+    font-size: 2.4rem;
+  }
+
+  textarea{
+    font-size: 2.4rem;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  #publish-post-btn, #cancel-post-btn{
+    width:25.3rem;
+    height: 5.9rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+
+  #cancel-post-btn{
+    margin-left: 2rem;
+  }
+  
+  .post{
+    border:1px solid #fff;
+    width:90%;
+    height: auto;
+    margin: 2rem auto;
+    
+  }
+
+  .post > h3{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    
+  }
+
+  .post > p{
+    width:95%;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    
+  }
+
+  .post > button{
+    width:20rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    background-color: #1E1E1E;
+    color: #fff;
+    border:1px solid #fff;
+    cursor: pointer;
+    font-weight: 200;
+  }
+
+  .post > button:hover{
+    background-color:#E3E3E3;
+    color:#111111;
+  }
+
+  .remove{
+    display: none;
+  }
+
+  .post> .time{
+    width:25%;
+    font-size:2rem;
+    display: inline;
+    opacity: 0.6;
+    /* display:inline-flexbox; */
+   
+    white-space: nowrap;
+    margin-left: 30%;
+  }
+
+  @media screen and (max-width:670px){
+    nav > h1{
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 2.5rem;
+      margin-left: 2rem;
+    }
+    nav > button{
+      width:20rem;
+      height: 4rem;
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+    .modal {
+      width: 100%; 
+      height: auto; 
+      
+    }
+    
+
+    .close {
+      font-size: 24px;
+    }
+    
+  
+    h2{
+      font-size: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    }
+  
+    #post-heading{
+      height: 4rem;
+    }
+  
+    input::placeholder{
+      font-size: 2rem;
+    }
+  
+    textarea::placeholder{
+      font-size: 2rem;
+    }
+    #publish-post-btn, #cancel-post-btn{
+      width:16rem;
+      height: 4rem;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      display: block;
+    }
+   
+    #cancel-post-btn{
+      margin-left: 0;
+    }
+  
+    .post > h3{
+      font-size: 3rem;
+    }
+  
+
+  
+    .post> .time{
+      width:90%;
+      font-size:2rem;
+      display: block;
+      opacity: 0.6;
+      /* display:inline-flexbox; */
+     
+      white-space: nowrap;
+      margin-left: 3%;
+    }
+  }
