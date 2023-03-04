@@ -257,9 +257,9 @@ nav > button:hover{
       font-size: 2rem;
     }
     #publish-post-btn, #cancel-post-btn{
-      width:16rem;
-      height: 4rem;
-      font-size: 2rem;
+      width:12rem;
+      height: 2rem;
+      font-size: 1.5rem;
       cursor: pointer;
       margin-bottom: 2rem;
       display: block;
